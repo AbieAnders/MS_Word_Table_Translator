@@ -8,7 +8,7 @@ doc.save('Table Document.docx')   #redundant save statement that is used to crea
 translator_object = Translator()
 
 title = doc.add_heading('The Table')
-table = doc.add_table(rows = 1, cols = 3)   #the row containing column names(first row) is created with 3 columns during the creation of the table.
+table = doc.add_table(rows = 1, cols = 3, style = 'Table Grid')   #the row containing column names(first row) is created with 3 columns during the creation of the table.
 header_row = table.rows[0].cells   #stores the individual cells of the first row in a variable.
 header_row[0].text = 'S.No'
 header_row[1].text = 'Water'
